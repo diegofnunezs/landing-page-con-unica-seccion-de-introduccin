@@ -43,6 +43,7 @@
 .content_description{
   grid-area: content_description;
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .content_button{
@@ -82,9 +83,9 @@
 
 @media screen and (max-width:1000px){
   .main_container{
-    background-size: contain;
+    /* background-size: contain; */
     background-image: url(./images/bg-mobile.svg);
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     grid-template-areas:"header"
                         "content_image"
                         "content_description"
@@ -109,9 +110,13 @@
     text-align: center;
     margin-top: 10px;
   }
+  .content_description{
+    text-align: center;
+  }
+
 
   .content_button{
-    margin-left: 30%;
+    /* margin-left: 30%; */
     font-size: 15px;
     margin-top: 18px;
   }
